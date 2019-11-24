@@ -1,0 +1,43 @@
+    <ProductSection ovf:required="true">
+    <Info>Information about the installed software</Info>
+      <Product>PhotonOS Appliance</Product>
+      <Vendor>virtuallyGhetto</Vendor>
+      <Version>{{VERSION}}</Version>
+      <ProductUrl>https://github.com/lamw/photonos-appliance</ProductUrl>
+      <VendorUrl>https://virtuallyghetto.com/</VendorUrl>
+      <Category>Networking</Category>
+        <Property ovf:key="guestinfo.hostname" ovf:type="string" ovf:userConfigurable="true" ovf:value="veba.primp-industries.com">
+            <Label>Hostname</Label>
+            <Description>Hostname of system</Description>
+        </Property>
+        <Property ovf:key="guestinfo.ipaddress" ovf:type="string" ovf:userConfigurable="true" ovf:value="192.168.30.170">
+            <Label>IP Address</Label>
+            <Description>IP Address of the system</Description>
+        </Property>
+        <Property ovf:key="guestinfo.netmask" ovf:type="string" ovf:userConfigurable="true" ovf:value="24">
+            <Label>Netmask Prefix</Label>
+            <Description>CIDR notation (e.g. 24 for 255.255.255.0, 28 for 255.255.255.240)</Description>
+        </Property>
+        <Property ovf:key="guestinfo.gateway" ovf:type="string" ovf:userConfigurable="true" ovf:value="192.168.30.1">
+            <Label>Gateway</Label>
+            <Description>Gateway of the system</Description>
+        </Property>
+        <Property ovf:key="guestinfo.dns" ovf:type="string" ovf:userConfigurable="true" ovf:value="192.168.30.1">
+            <Label>DNS</Label>
+            <Description>DNS Server</Description>
+        </Property>
+        <Property ovf:key="guestinfo.domain" ovf:type="string" ovf:userConfigurable="true" ovf:value="primp-industries.com">
+            <Label>DNS Domain</Label>
+            <Description>DNS Domain</Description>
+        </Property>
+        <Category>Credentials</Category>
+        <Property ovf:key="guestinfo.root_password" ovf:password="true" ovf:type="string" ovf:userConfigurable="true" ovf:value="VMware1!">
+            <Label>Root Password</Label>
+            <Description>Password to login in as root. Please use a secure password</Description>
+        </Property>
+        <Category>zDebug</Category>
+        <Property ovf:key="guestinfo.debug" ovf:type="boolean" ovf:userConfigurable="true" ovf:value="true">
+            <Label>Debugging</Label>
+            <Description>Enable Debugging</Description>
+        </Property>
+    </ProductSection>
