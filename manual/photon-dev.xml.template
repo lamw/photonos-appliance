@@ -6,7 +6,7 @@
       <ProductUrl>https://github.com/lamw/photonos-appliance</ProductUrl>
       <VendorUrl>https://virtuallyghetto.com/</VendorUrl>
       <Category>Networking</Category>
-        <Property ovf:key="guestinfo.hostname" ovf:type="string" ovf:userConfigurable="true" ovf:value="veba.primp-industries.com">
+        <Property ovf:key="guestinfo.hostname" ovf:type="string" ovf:userConfigurable="true" ovf:value="photon-01.primp-industries.com">
             <Label>Hostname</Label>
             <Description>Hostname of system</Description>
         </Property>
