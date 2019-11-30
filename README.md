@@ -8,6 +8,11 @@
 * [Packer](https://www.packer.io/intro/getting-started/install.html)
 
 
+> `packer` builds the OVA on a remote ESXi host via the [`vmware-iso`](https://www.packer.io/docs/builders/vmware-iso.html) builder. This builder requires the SSH service running on the ESXi host, as well as `GuestIPHack` enabled via the command below.
+```
+esxcli system settings advanced set -o /Net/GuestIPHack -i 1
+```
+
 Step 1 - Clone the git repository
 
 ```
